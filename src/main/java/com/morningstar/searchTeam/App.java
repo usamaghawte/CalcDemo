@@ -12,6 +12,7 @@ public class App
 
 		Scanner sc = new Scanner(System.in);
 		MaddyWork md = new MaddyWork();
+		usamaWork w = new usamaWork();
 		while (true) {
 			try {
 				System.out.println("********BASIC PROGRAMING*****");
@@ -22,10 +23,9 @@ public class App
 				switch (choice) {
 				case 1:
 					System.out.println("@@@@@PRIME NUMBER@@@@@");
-					usamaWork w = new usamaWork();
 					w.prime();
 					break;
-				case 2:
+				case 3:
 					System.out.println("@@@@@ PALINDROME @@@@@");
 					System.out.println("Enter Data to Check Palindrome");
 					String palin = sc.nextLine().trim();
@@ -34,7 +34,7 @@ public class App
 					else
 						System.out.println(palin + " is not a Palindrome");
 					break;
-				case 3:
+				case 2:
 					System.out.println("@@@@@ FIBONACCI SERIES @@@@@");
 					System.out.println("Enter First Number of Fibonnaci Series");
 					int f1 = sc.nextInt();
@@ -43,6 +43,8 @@ public class App
 					md.fibonnaciS(f1, f2);
 					break;
 				case 4:
+					System.out.println("@@@@@ ARM STRONG NUMBER @@@@@");
+					w.arm();
 					break;
 				case 5:
 					System.out.println("Terminated");
@@ -53,6 +55,7 @@ public class App
 					break;
 
 				}
+				sc.nextByte();
 			} catch (Exception ex) {
 				System.err.println(ex);
 			}

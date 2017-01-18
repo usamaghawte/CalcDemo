@@ -1,15 +1,15 @@
 package com.morningstar.searchTeam;
 
 import java.util.Scanner;
-
+import java.util.*;
 public class usamaWork {
-
+	 Scanner sc = new Scanner(System.in);
 	
 	
 		void prime() {
 			int temp;
 			boolean isPrime = true;
-			 Scanner sc = new Scanner(System.in);
+			 //Scanner sc = new Scanner(System.in);
 			System.out.println("Enter a number for check:");
 			// capture the input in an integer
 			int num = sc.nextInt();
@@ -33,6 +33,28 @@ public class usamaWork {
 			}
 	}
 	
+		void arm()
+		{
+			System.out.println("Enter a  Arm strong number:");
+			String arm=sc.nextLine();
+			char[] num=arm.toCharArray();
+			Integer temp=0;
+			for(int i=0;i<num.length;i++)
+			{
+				temp+=((Integer.parseInt(num[i]+""))*(Integer.parseInt(num[i]+""))*(Integer.parseInt(num[i]+"")));
+			}
+			if(arm.equalsIgnoreCase(temp.toString())){
+				System.out.println("ARMSTRONG NUMBER"+temp);
+			}
+			else
+			{
+				System.out.println("NOT AN ARMSTRONG NUMBER"+temp);
+				
+			}
+			
+			
+			
+		}
 	
 	
 	
