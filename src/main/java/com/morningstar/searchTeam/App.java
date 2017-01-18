@@ -2,16 +2,29 @@ package com.morningstar.searchTeam;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
-public class App {
-	private static Scanner sc;
+class work {
+	void prime() {
+		int temp;
+		boolean isPrime = true;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number for check:");
+		// capture the input in an integer
+		int num = sc.nextInt();
+		for (int i = 2; i <= num / 2; i++) {
+			temp = num % i;
+			if (temp == 0) {
+				isPrime = false;
+				break;
+			}
 
+		}
+	}
+}
+
+public class App {
 	public static void main(String[] args) {
 
-		sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		MaddyWork md = new MaddyWork();
 		while (true) {
 			try {
@@ -23,6 +36,8 @@ public class App {
 				switch (choice) {
 				case 1:
 					System.out.println("@@@@@PRIME NUMBER@@@@@");
+					work w = new work();
+					w.prime();
 					break;
 				case 2:
 					System.out.println("@@@@@ PALINDROME @@@@@");
