@@ -1,27 +1,13 @@
 package com.morningstar.searchTeam;
 
-import java.util.Scanner;
+import java.util.*;
 
-class work {
-	void prime() {
-		int temp;
-		boolean isPrime = true;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number for check:");
-		// capture the input in an integer
-		int num = sc.nextInt();
-		for (int i = 2; i <= num / 2; i++) {
-			temp = num % i;
-			if (temp == 0) {
-				isPrime = false;
-				break;
-			}
-
-		}
-	}
-}
-
-public class App {
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
@@ -36,7 +22,7 @@ public class App {
 				switch (choice) {
 				case 1:
 					System.out.println("@@@@@PRIME NUMBER@@@@@");
-					work w = new work();
+					usamaWork w = new usamaWork();
 					w.prime();
 					break;
 				case 2:
