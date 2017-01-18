@@ -21,6 +21,16 @@ public class usamaWork {
 				}
 		
 			}
+			if(isPrime)
+			{
+				System.out.println("Is a prime number");
+				
+				
+			}
+			else
+			{
+				System.out.println("Not a prime number");
+			}
 	}
 	
 	
