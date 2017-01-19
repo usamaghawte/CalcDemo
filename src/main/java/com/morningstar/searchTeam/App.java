@@ -1,34 +1,20 @@
-<<<<<<< HEAD
-
 package com.morningstar.searchTeam;
 
-import java.util.Scanner;
-=======
-package com.morningstar.searchTeam;
+import java.util.Scanner;package com.morningstar.searchTeam;
 
 import java.util.*;
->>>>>>> 35f8ff1a01c3464f435a9843e8f60327621eea08
 
 /**
  * Hello world!
  *
  */
-<<<<<<< HEAD
 public class App {
-=======
-public class App 
-{
->>>>>>> 35f8ff1a01c3464f435a9843e8f60327621eea08
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		MaddyWork md = new MaddyWork();
 		usamaWork w = new usamaWork();
-<<<<<<< HEAD
 		while (true) {
-=======
-		while (false) {
->>>>>>> 35f8ff1a01c3464f435a9843e8f60327621eea08
 			try {
 				System.out.println("********BASIC PROGRAMING*****");
 				System.out.println(
@@ -56,11 +42,8 @@ public class App
 					System.out.println("Enter Second Number of Fibonnaci Series");
 					int f2 = sc.nextInt();
 					md.fibonnaciS(f1, f2);
-<<<<<<< HEAD
-					//Hello This is mandar
-=======
-					//override
->>>>>>> 35f8ff1a01c3464f435a9843e8f60327621eea08
+					// Hello This is mandar
+					// override
 					break;
 				case 4:
 					System.out.println("@@@@@ ARM STRONG NUMBER @@@@@");
@@ -83,7 +66,4 @@ public class App
 
 	}
 }
-<<<<<<< HEAD
-=======
-//hello how r u?
->>>>>>> 35f8ff1a01c3464f435a9843e8f60327621eea08
+// hello how r u?
