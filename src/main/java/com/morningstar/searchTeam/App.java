@@ -13,7 +13,7 @@ public class App
 		Scanner sc = new Scanner(System.in);
 		MaddyWork md = new MaddyWork();
 		usamaWork w = new usamaWork();
-		while (true) {
+		while (false) {
 			try {
 				System.out.println("********BASIC PROGRAMING*****");
 				System.out.println(
