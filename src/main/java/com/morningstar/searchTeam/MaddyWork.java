@@ -1,5 +1,5 @@
 package com.morningstar.searchTeam;
-import com.morningstar.api.MaddyWorkApi;;
+import com.morningstar.api.MaddyWorkApi;
 
 public class MaddyWork implements MaddyWorkApi {
 	@Override
