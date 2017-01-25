@@ -1,4 +1,4 @@
-package com.morningstar.searchTeam;
+package com.morningstar.searchteam;
 
 import java.util.Scanner;
 public class usamaWork {

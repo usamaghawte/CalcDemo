@@ -1,4 +1,4 @@
-package com.morningstar.searchTeam;
+package com.morningstar.searchteam;
 import com.morningstar.api.MaddyWorkApi;
 
 public class MaddyWork implements MaddyWorkApi {
