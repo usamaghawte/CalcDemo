@@ -8,6 +8,7 @@ public class usamaWork {
 		void prime() {
 			int temp;
 			boolean isPrime = true;
+			System.out.println("@@@@@PRIME NUMBER@@@@@");// NOPMD
 			System.out.println("Enter a number for check:");// NOPMD
 			int num = sc.nextInt();
 			for (int i = 2; i <= num / 2; i++) {

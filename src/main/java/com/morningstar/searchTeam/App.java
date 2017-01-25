@@ -28,17 +28,10 @@ public class App {
 				int choice = sc.nextInt();
 				switch (choice) {
 				case 1:
-					System.out.println("@@@@@PRIME NUMBER@@@@@");// NOPMD
 					w.prime();
 					break;
 				case 3:
-					System.out.println("@@@@@ PALINDROME @@@@@");// NOPMD
-					System.out.println("Enter Data to Check Palindrome");// NOPMD
-					String palin = sc.nextLine().trim();
-					if (md.palindrome(palin))
-						System.out.println(palin + " is Palindrome");// NOPMD
-					else
-						System.out.println(palin + " is not a Palindrome");// NOPMD
+					palindro();
 					break;
 				case 2:
 					fibbo();
@@ -72,6 +65,15 @@ public class App {
 		int f2 = sc.nextInt();
 		String ans=md.fibonnaciS(f1, f2);
 		System.out.println(ans);
+	}
+	private static void palindro() {
+		System.out.println("@@@@@ PALINDROME @@@@@");// NOPMD
+		System.out.println("Enter Data to Check Palindrome");// NOPMD
+		String palin = sc.nextLine().trim();
+		if (md.palindrome(palin))
+			System.out.println(palin + " is Palindrome");// NOPMD
+		else
+			System.out.println(palin + " is not a Palindrome");// NOPMD
 	}
 }
 // hello how r u?
