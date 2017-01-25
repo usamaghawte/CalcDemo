@@ -1,6 +1,6 @@
 package com.morningstar.searchTeam;
 
-import java.util.Scanner;package com.morningstar.searchTeam;
+import java.util.Scanner;
 
 import java.util.*;
 
@@ -9,6 +9,9 @@ import java.util.*;
  *
  */
 public class App {
+	private App() {
+		System.out.println("Calculator Application");
+	}
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
