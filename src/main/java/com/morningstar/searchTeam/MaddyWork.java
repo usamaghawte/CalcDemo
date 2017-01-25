@@ -17,11 +17,13 @@ public class MaddyWork implements com.morningstar.searchTeam.api.MaddyWorkApi {
 	public String fibonnaciS(int num1, int num2) {
 		int a=num1,b=num2;
 		String ans="Fibonacci Series : " + num1 + " , " + num2;
+		StringBuilder bldg=new StringBuilder(ans);
 		for (int i = 0; i < 10; i++) {
 			b += a;
 			a = b - a;
-			ans+=" , " + b;
+			bldg.append(" , " + b);
 		}
+		ans=bldg.toString();
 		return ans;
 	}
 }
