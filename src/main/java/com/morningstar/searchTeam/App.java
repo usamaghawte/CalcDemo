@@ -41,7 +41,7 @@ public class App {
 						System.out.println(palin + " is not a Palindrome");// NOPMD
 					break;
 				case 2:
-					Fibbo();
+					fibbo();
 					break;
 				case 4:
 					System.out.println("@@@@@ ARM STRONG NUMBER @@@@@");// NOPMD
@@ -64,7 +64,7 @@ public class App {
 		}
 
 	}
-	private static void Fibbo() {
+	private static void fibbo() {
 		System.out.println("@@@@@ FIBONACCI SERIES @@@@@");// NOPMD
 		System.out.println("Enter First Number of Fibonnaci Series");// NOPMD
 		int f1 = sc.nextInt();
