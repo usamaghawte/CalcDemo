@@ -41,7 +41,7 @@ public class usamaWork {
 			Integer temp=0;
 			for(int i=0;i<num.length;i++)
 			{
-				temp+=((Integer.parseInt(num[i]+""))*(Integer.parseInt(num[i]+""))*(Integer.parseInt(num[i]+"")));
+				temp+=((Integer.parseInt(Character.toString(num[i])))*(Integer.parseInt(Character.toString(num[i])))*(Integer.parseInt(Character.toString(num[i]))));
 			}
 			if(arm.equalsIgnoreCase(temp.toString())){
 				System.out.println("ARMSTRONG NUMBER"+temp);

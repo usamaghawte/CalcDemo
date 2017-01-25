@@ -12,13 +12,16 @@ public class MaddyWork implements com.morningstar.searchTeam.api.MaddyWorkApi {
 		}
 		return false;
 	}
+	
 	@Override
-	public void fibonnaciS(int num1, int num2) {
-		System.out.println("Fibonacci Series : " + num1 + " , " + num2);
+	public String fibonnaciS(int num1, int num2) {
+		int a=num1,b=num2;
+		String ans="Fibonacci Series : " + num1 + " , " + num2;
 		for (int i = 0; i < 10; i++) {
-			num2 += num1;
-			num1 = num2 - num1;
-			System.out.print(" , " + num2);
+			b += a;
+			a = b - a;
+			ans+=" , " + b;
 		}
+		return ans;
 	}
 }

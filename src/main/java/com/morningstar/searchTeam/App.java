@@ -17,7 +17,8 @@ public class App {
 		Scanner sc = new Scanner(System.in);
 		MaddyWork md = new MaddyWork();
 		usamaWork w = new usamaWork();
-		while (true) {
+		boolean flag=true;
+		while (flag) {
 			try {
 				System.out.println("********BASIC PROGRAMING*****");
 				System.out.println(
@@ -44,9 +45,8 @@ public class App {
 					int f1 = sc.nextInt();
 					System.out.println("Enter Second Number of Fibonnaci Series");
 					int f2 = sc.nextInt();
-					md.fibonnaciS(f1, f2);
-					// Hello This is mandar
-					// override
+					String ans=md.fibonnaciS(f1, f2);
+					System.out.println(ans);
 					break;
 				case 4:
 					System.out.println("@@@@@ ARM STRONG NUMBER @@@@@");
@@ -54,7 +54,7 @@ public class App {
 					break;
 				case 5:
 					System.out.println("Terminated");
-					System.exit(0);
+					flag=false;
 					break;
 				default:
 					System.out.println("WRONG CHOICE");
@@ -64,6 +64,7 @@ public class App {
 				sc.nextByte();
 			} catch (Exception ex) {
 				System.err.println(ex);
+				flag=false;
 			}
 		}
 
