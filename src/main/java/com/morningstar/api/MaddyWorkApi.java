@@ -1,4 +1,4 @@
-package com.morningstar.searchTeam.api;
+package com.morningstar.api;
 
 public interface MaddyWorkApi {
 	public boolean palindrome(String data);
